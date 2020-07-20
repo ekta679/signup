@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+    <form class="needs-validation" novalidate>
+        <div class="container login-container ">
+            <div class="row justify-content-centre">
+                <div class="col-md-6 login-form">
+                    <div class="form-group">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" class="form-control" placeholder=" Email " value="" required />
+                        <div class="invalid-feedback">
+                            Please provide a valid email.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        
+                        <i class="fa fa-lock"></i>
+                        <span></span><i class="fa fa-eye " id="showpsw" onclick="myFunction()"></i></span>
+                        <input type="password" class="form-control" placeholder=" Password " maxlength="30"
+                            id="password" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters"
+                            required>   
+                        <div class="invalid-feedback">
+                            Please provide a valid password.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btnSubmit" value="Login" />
+                    </div>
+
+                    <div class="btnsignup">
+                        Don't have account?<a href="signup.html">&nbsp;Signup </a></div>
+                        
+                    <div class="form-group">
+                        <h2 id="h2" style="color:white">or connect with</h2>
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="fa fa-google-plus"></a>
+                        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+    </form>
+    <script src="js/showpassword.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+
+</html>
